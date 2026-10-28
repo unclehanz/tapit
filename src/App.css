@@ -1355,7 +1355,8 @@
 /* Mobile: compact layout so the page is a short scroll, not one card per screen */
 @media (max-width: 720px) {
   .container {
-    padding: 0 16px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .section {
