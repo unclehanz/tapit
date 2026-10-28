@@ -7,11 +7,20 @@ export default function Cta() {
         <div className="cta-copy">
           <h2 className="cta-title">Put your shop one tap away.</h2>
           <p className="cta-lead">
-            Message us on Facebook or email{' '}
-            <a href={`mailto:${EMAIL}`} className="cta-email-link">
-              {EMAIL}
-            </a>{' '}
-            and tell us about your business. We will set up your card and page.
+            <span className="only-desktop">
+              Message us on Facebook or email{' '}
+              <a href={`mailto:${EMAIL}`} className="cta-email-link">
+                {EMAIL}
+              </a>{' '}
+              and tell us about your business. We will set up your card and page.
+            </span>
+            <span className="only-mobile">
+              Message us on Facebook or email{' '}
+              <a href={`mailto:${EMAIL}`} className="cta-email-link">
+                {EMAIL}
+              </a>
+              .
+            </span>
           </p>
         </div>
         <div className="button-row">

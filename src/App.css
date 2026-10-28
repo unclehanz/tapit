@@ -1568,3 +1568,18 @@
     font-size: 15px;
   }
 }
+
+/* Short copy on phones, full copy on larger screens */
+.only-mobile {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  .only-desktop {
+    display: none;
+  }
+
+  .only-mobile {
+    display: inline;
+  }
+}

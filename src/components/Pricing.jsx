@@ -7,7 +7,10 @@ export default function Pricing() {
       <div className="container stack-lg">
         <div className="section-head">
           <h2 className="section-title">Simple pricing</h2>
-          <p className="section-lead">Pick the card that fits your business. {HOSTING_NOTE}</p>
+          <p className="section-lead">
+            <span className="only-desktop">Pick the card that fits your business. </span>
+            {HOSTING_NOTE}
+          </p>
         </div>
         <div className="card-row card-row-stretch">
           {PLANS.map((p) => (

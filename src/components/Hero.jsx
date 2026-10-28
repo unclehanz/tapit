@@ -9,8 +9,11 @@ export default function Hero() {
           <div className="eyebrow">NFC + QR CARDS FOR LOCAL BUSINESSES</div>
           <h1 className="hero-title">One tap opens your whole shop.</h1>
           <p className="hero-lead">
-            TAP-IT gives your business an NFC card with a QR code. Customers tap or scan, and your own mobile page
+            <span className="only-desktop">
+              TAP-IT gives your business an NFC card with a QR code. Customers tap or scan, and your own mobile page
             opens: menu, hours, map, messages and payment, always up to date.
+            </span>
+            <span className="only-mobile">An NFC card with a QR code. Tap or scan and your shop's page opens.</span>
           </p>
           <div className="button-row">
             <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
@@ -26,7 +29,7 @@ export default function Hero() {
               {EMAIL}
             </a>
           </p>
-          <p className="hero-note">No app needed for your customers. The QR code works on any phone camera.</p>
+          <p className="hero-note only-desktop">No app needed for your customers. The QR code works on any phone camera.</p>
         </div>
         <div className="hero-visual">
           <HeroArt />
